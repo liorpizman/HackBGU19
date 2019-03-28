@@ -17,16 +17,13 @@
 <div class="login-page">
   <div class="form">
 
-    <form>
-      <input type="text" placeholder="&#9755; full name"/>
-      <input type="text" placeholder="&#9755; email address"/>
-      <input type="text" placeholder="&#9755; pick a username"/>
-      <input type="password" placeholder="&#9755; set a password"/>
-      
-    </form>
+    <form class="login-form" action="submit.php" method ="post">
+      <input type="text" name="fullname" placeholder="&#9755; full name"/>
+      <input type="text" name="email" placeholder="&#9755; email address"/>
+      <input type="text" name="username" placeholder="&#9755; pick a username"/>
+      <input type="password" name="password" placeholder="&#9755; set a password"/>
 
-    <form class="login-form">
-      <button type="button" onclick="window.location.href=''">SIGN UP</button>
+      <button type="submit" onclick="window.location.href='viewMaterials.html'">SIGN UP</button>
       <button type="button" onclick="window.location.href='login.html'">Back</button>
     </form>
   </div>
