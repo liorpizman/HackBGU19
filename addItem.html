@@ -12,17 +12,17 @@
 
 <body class="body">
 	
-	<img style="position: absolute; top: 16.5em; left: 9em; border: 0;" src="Rainforest-Logo.png"></a>
+	<img style="position: absolute; top: 15em; left: 12em; height: 60%; width: 70% ; border: 0;" src="Rainforest-Logo.png"></a>
 
 <div class="login-page">
   <div class="form">
 
     <form action="insert.php" method ="post">
-      <input type="text" name="coursename" placeholder="&#9755;  Course Name"/>
-      <input type="number" name="courseid" placeholder="&#9755;  Course Id"/>
-      <input type="text" name="desc" placeholder="&#9755;  Material Description"/>
-      <input type="text" name="email" placeholder="&#9755;  Email"/>
-      <button type="submit" onclick="window.location.href='viewMaterial.html'">Share My Study Material</button>
+      <input type="text" name="coursename" placeholder="&#9755;  Course Name" required="true"/>
+      <input type="number" name="courseid" placeholder="&#9755;  Course Id" required="true"/>
+      <input type="text" name="desc" placeholder="&#9755;  Material Description" required="true"/>
+      <input type="text" name="email" placeholder="&#9755;  Email" required="true"/>
+      <button type="submit">Share My Study Material</button>
       <p class="message"></p>
     </form>
 

@@ -12,18 +12,18 @@
 
 <body class="body">
 
-  <img style="position: absolute; top: 16em; left: 13em; border: 0;" src="Rainforest-Logo.png"></a>
+	<img style="position: absolute; top: 17em; left: 12em; height: 60%; width: 70% ; border: 0;" src="Rainforest-Logo.png"></a>
   
 <div class="login-page">
   <div class="form">
 
     <form class="login-form" action="submit.php" method ="post">
-      <input type="text" name="fullname" placeholder="&#9755; full name"/>
-      <input type="text" name="email" placeholder="&#9755; email address"/>
-      <input type="text" name="username" placeholder="&#9755; pick a username"/>
-      <input type="password" name="password" placeholder="&#9755; set a password"/>
+      <input type="text" name="fullname" placeholder="&#9755; full name" required="true"/>
+      <input type="text" name="email" placeholder="&#9755; email address" required="true"/>
+      <input type="text" name="username" placeholder="&#9755; pick a username" required="true"/>
+      <input type="password" name="password" placeholder="&#9755; set a password" required="true"/>
 
-      <button type="submit" onclick="window.location.href='viewMaterials.html'">SIGN UP</button>
+      <button type="submit" onclick="window.location.href='viewMaterials.php'">SIGN UP</button>
       <button type="button" onclick="window.location.href='login.html'">Back</button>
     </form>
   </div>

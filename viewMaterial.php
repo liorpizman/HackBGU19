@@ -19,7 +19,8 @@
 <div class="login-page">
   <div class="form">
     <form>
-        
+
+  
     <table class="greenTable">
             <thead>
             <tr>
@@ -38,16 +39,32 @@
             </tr>
             </tfoot>
             <tbody>
-            <tr>
-            <td>37204341</td><td>Data Structures</td><td>I hand out a test notebook</td><td>abc@gmail.com</td><td>Yes</td></tr>
-            <tr>
-            <td>37204334</td><td>Artificial Intelligence</td><td>I have a notebook I wrote by myself</td><td>cde@gmail.com</td><td>No</td></tr>
-            <tr>
-            <td>64004338</td><td>Psychology</td><td>A lot of materials</td><td>efg@gmail.com</td><td>Yes</td></tr>
-            <tr>
-            <td></td><td></td><td></td><td></td><td></td></tr>
-            <tr>
-            <td></td><td></td><td></td><td></td><td></td></tr>
+
+            <?php
+            $servername = "localhost";
+            $username = "root";
+            $password = "";
+            $dbname="rainforestdb";
+            $connect = new mysqli($servername, $username, $password, $dbname);
+            mysqli_set_charset($connect,"utf8");
+            if (!$connect) {
+                die(mysql_error());
+            }
+            $sql = "SELECT * FROM `materials` LIMIT 0, 100 "; 
+            $result = mysqli_query($connect, $sql);
+            while($row = mysqli_fetch_assoc($result)) {
+            ?>
+                <tr>
+                    <td><?php echo $row['courseID']?></td>
+                    <td><?php echo $row['courseName']?></td>
+                    <td><?php echo $row['descP']?></td>
+                    <td><?php echo $row['email']?></td>
+                    <td><?php echo $row['dateP']?></td>
+                </tr>
+
+            <?php
+            }
+            ?>
             </tbody>
             </tr>
             </table>
