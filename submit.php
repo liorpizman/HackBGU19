@@ -23,7 +23,7 @@ if ($conn->query($sql) === TRUE) {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
-header("Location: /HackBgu19/viewMaterial.html");
+header("Location: /HackBgu19/viewMaterial.php");
 
 $conn->close();
 ?>

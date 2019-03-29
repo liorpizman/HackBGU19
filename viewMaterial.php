@@ -5,30 +5,25 @@
   <title>View Available Material</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="view_material.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>  
+  <link rel="stylesheet" type="text/css" href="view_materials.css">
 </head>
 
 <body class="body">
 	
-	<img style="position: absolute; top: 13em; left: 7em; border: 0;" src="Rainforest-Logo.png"></a>
-
+<img style="position: absolute; top: 18em; left: 12em; height: 60%; width: 70% ; border: 0;" src="Rainforest-Logo.png"></a>
 
 
 <div class="login-page">
-  <div class="form">
+  <div class="form"> 
     <form>
-
-  
-    <table class="greenTable">
+    <table class="greenTable" id="notebooks">
             <thead>
             <tr>
             <th><div class="centerTxt">Course Id</div></th>
             <th><div class="centerTxt">Course Name</div></th>
             <th><div class="centerTxt">Description</div></th>
             <th><div class="centerTxt">Email</div></th>
-            <th><div class="centerTxt">Attached Image</div></th>
+            <th><div class="centerTxt">Published Date</div></th>
             </tr>
             </thead>
             <tfoot>
@@ -68,7 +63,8 @@
             </tbody>
             </tr>
             </table>
-      <button type="button" onclick="window.location.href='login.html'">Back</button>
+      <button class="btn" type="button" onclick="window.location.href='login.html'">Back</button>
+      <button class="btn" type="button" onclick="window.location.href='addItem.html'">Add Material</button>
       <p class="message"></p>
     </form>
 
@@ -76,8 +72,9 @@
 </div>
 
 
-
-
 </body>
 </html>
+
+
+
 
